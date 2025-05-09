@@ -1,6 +1,8 @@
-Manual Installation
+**Manual Installation**
 Official Documentation
+```
 Recommended Hardware: 4 Cores, 8GB RAM, 200GB of storage (NVME)
+```
 
 # install dependencies, if needed
 sudo apt update && sudo apt upgrade -y
