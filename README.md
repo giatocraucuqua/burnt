@@ -4,9 +4,12 @@ Official Documentation
 Recommended Hardware: 4 Cores, 8GB RAM, 200GB of storage (NVME)
 ```
 
-# install dependencies, if needed
+**install dependencies, if needed**
+```
 sudo apt update && sudo apt upgrade -y
 sudo apt install curl git wget htop tmux build-essential jq make lz4 gcc unzip -y
+```
+
 Node Name
 Wallet
 Port
