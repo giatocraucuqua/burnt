@@ -33,11 +33,13 @@ echo "export XION_PORT="55"" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 ```
 
-# download binary
+**download binary**
+```
 cd $HOME
 wget -O xiond https://github.com/burnt-labs/xion/releases/download/v18.0.0/xiond-linux-amd64
 chmod +x $HOME/xiond
 mv $HOME/xiond $HOME/go/bin/xiond
+```
 
 # config and init app
 xiond init $MONIKER --chain-id $XION_CHAIN_ID
