@@ -41,11 +41,13 @@ chmod +x $HOME/xiond
 mv $HOME/xiond $HOME/go/bin/xiond
 ```
 
-# config and init app
+**config and init app**
+```
 xiond init $MONIKER --chain-id $XION_CHAIN_ID
 xiond config set client chain-id $XION_CHAIN_ID
 xiond config set client node tcp://localhost:${XION_PORT}657
 sed -i -e "s|^node *=.*|node = \"tcp://localhost:${XION_PORT}657\"|" $HOME/.xiond/config/client.toml
+```
 
 # download genesis and addrbook
 wget -O $HOME/.xiond/config/genesis.json https://server-5.itrocket.net/testnet/burnt/genesis.json
